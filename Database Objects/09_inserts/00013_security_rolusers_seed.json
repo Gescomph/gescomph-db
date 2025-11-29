@@ -1,0 +1,38 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00013-insert-rolusers",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "valueNumeric": 1 } },
+                { "column": { "name": "RolId", "valueNumeric": 1 } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolUsers",
+              "columns": [
+                { "column": { "name": "UserId", "valueNumeric": 2 } },
+                { "column": { "name": "RolId", "valueNumeric": 2 } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

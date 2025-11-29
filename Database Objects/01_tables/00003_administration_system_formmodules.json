@@ -1,0 +1,123 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00003-administration_system-formmodules",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "FormId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ModuleId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columnNames": "FormId, ModuleId",
+              "constraintName": "UK_FormModules_Form_Module"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "AdministrationSystem",
+              "baseTableName": "FormModules",
+              "baseColumnNames": "FormId",
+              "constraintName": "FK_FormModules_Forms",
+              "referencedTableSchemaName": "AdministrationSystem",
+              "referencedTableName": "Forms",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "AdministrationSystem",
+              "baseTableName": "FormModules",
+              "baseColumnNames": "ModuleId",
+              "constraintName": "FK_FormModules_Modules",
+              "referencedTableSchemaName": "AdministrationSystem",
+              "referencedTableName": "Modules",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "indexName": "IX_FormModules_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "descending": true
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Id",
+                    "descending": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

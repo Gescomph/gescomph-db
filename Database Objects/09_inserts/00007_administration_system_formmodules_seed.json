@@ -1,0 +1,167 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00007-insert-formmodules",
+        "author": "gescomph-team",
+        "changes": [
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 1 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 1 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 2 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 2 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 3 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 4 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 4 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 5 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 5 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 6 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 6 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 6 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 7 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 6 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 8 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 6 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 9 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 6 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 10 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 6 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "FormModules",
+              "columns": [
+                { "column": { "name": "FormId", "valueNumeric": 11 }},
+                { "column": { "name": "ModuleId", "valueNumeric": 7 }},
+                { "column": { "name": "IsDeleted", "valueBoolean": false }},
+                { "column": { "name": "Active", "valueBoolean": true }},
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" }}
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

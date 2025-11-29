@@ -1,0 +1,317 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00014-insert-establishments",
+        "author": "gescomph-team",
+        "changes": [
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Centro Comercial Primavera" } },
+                { "column": { "name": "Description", "value": "Local comercial en centro urbano con alto flujo peatonal." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 120 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 33365 } },
+                { "column": { "name": "Address", "value": "Cra. 15 # 93-60, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.67 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Oficina Torre Norte Piso 7" } },
+                { "column": { "name": "Description", "value": "Oficina empresarial con vista y sala de reuniones." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 85 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 24401 } },
+                { "column": { "name": "Address", "value": "Av. El Dorado # 69-76, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.49 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Bodega Industrial Sur" } },
+                { "column": { "name": "Description", "value": "Bodega con muelle de carga y altura de 8m." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 750 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 49799 } },
+                { "column": { "name": "Address", "value": "Cl. 57 Sur # 30-15, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 1.0 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Local Gastronómico Zona G" } },
+                { "column": { "name": "Description", "value": "Espacio para restaurante con extracción y bodega." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 95 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 38842 } },
+                { "column": { "name": "Address", "value": "Cra. 5 # 69A-19, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.78 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Isla Comercial Pasillo Central" } },
+                { "column": { "name": "Description", "value": "Isla en pasillo principal, ideal retail liviano." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 12 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 8964 } },
+                { "column": { "name": "Address", "value": "Centro Comercial Primavera, pasillo central" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.18 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Oficina Torre Norte Piso 12" } },
+                { "column": { "name": "Description", "value": "Oficina abierta con 2 parqueaderos y cableado estructurado." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 110 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 28883 } },
+                { "column": { "name": "Address", "value": "Av. El Dorado # 69-76, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.58 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Taller Automotriz Zona Industrial" } },
+                { "column": { "name": "Description", "value": "Espacio para taller con bahías de servicio y compresor central." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 280 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 35357 } },
+                { "column": { "name": "Address", "value": "Cl. 13 # 50-21, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.71 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Local Moda Nivel 2" } },
+                { "column": { "name": "Description", "value": "Local para retail de vestuario con vitrina de 8m." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 65 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 16434 } },
+                { "column": { "name": "Address", "value": "Centro Comercial Primavera local 245" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.33 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Food Court Punto Norte" } },
+                { "column": { "name": "Description", "value": "Local de comidas con ducto de extracción y zona de lavado." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 40 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 19920 } },
+                { "column": { "name": "Address", "value": "Centro Comercial Primavera plazoleta norte" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.40 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Oficina Torre Norte Piso 15" } },
+                { "column": { "name": "Description", "value": "Planta libre con 3 salas de juntas, vista panorámica y cableado." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 130 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 33365 } },
+                { "column": { "name": "Address", "value": "Av. El Dorado # 69-76, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.67 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Consultorio Medico Torre Occidente" } },
+                { "column": { "name": "Description", "value": "Consultorio con sala de espera privada y punto para UPS." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 55 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 15438 } },
+                { "column": { "name": "Address", "value": "Cl. 30A # 82-15, Medellín" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.31 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Mini Bodega Subterranea" } },
+                { "column": { "name": "Description", "value": "Bodega de apoyo para inventario con acceso por montacargas." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 45 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 9960 } },
+                { "column": { "name": "Address", "value": "Parqueaderos Plaza Central nivel -1" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.20 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Local Servicios Rapidos" } },
+                { "column": { "name": "Description", "value": "Local para mensajería, lavandería o boutique de servicios." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 30 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 8964 } },
+                { "column": { "name": "Address", "value": "Entrada sur Plaza Central" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.18 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Cowork Zona Abierta" } },
+                { "column": { "name": "Description", "value": "Zona cowork con estaciones flex y sala de capacitación." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 95 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 21912 } },
+                { "column": { "name": "Address", "value": "Nivel mezzanine Plaza Occidente" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.44 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Bodega Logistica Norte" } },
+                { "column": { "name": "Description", "value": "Bodega con patio de maniobras y rack de almacenamiento." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 410 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 39839 } },
+                { "column": { "name": "Address", "value": "Km 2 Vía Siberia, Bogotá" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.80 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Establishments",
+              "columns": [
+                { "column": { "name": "Name", "value": "Aula de Capacitacion Empresarial" } },
+                { "column": { "name": "Description", "value": "Sala para formación con proyector, sillas tipo auditorio y bodega." } },
+                { "column": { "name": "AreaM2", "valueNumeric": 70 } },
+                { "column": { "name": "RentValueBase", "valueNumeric": 13446 } },
+                { "column": { "name": "Address", "value": "Torre Norte piso 3, sala 305" } },
+                { "column": { "name": "UvtQty", "valueNumeric": 0.27 } },
+                { "column": { "name": "PlazaId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

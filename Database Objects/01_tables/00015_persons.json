@@ -1,0 +1,117 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00015-persons",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Persons",
+              "tableName": "Persons",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "FirstName",
+                    "type": "NVARCHAR(100)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "LastName",
+                    "type": "NVARCHAR(100)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": { "name": "Document", "type": "NVARCHAR(20)" }
+                },
+                {
+                  "column": { "name": "Address", "type": "NVARCHAR(200)" }
+                },
+                {
+                  "column": { "name": "Phone", "type": "NVARCHAR(20)" }
+                },
+                {
+                  "column": {
+                    "name": "CityId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Persons",
+              "tableName": "Persons",
+              "columnNames": "Document",
+              "constraintName": "UK_Persons_Document"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "Persons",
+              "baseTableName": "Persons",
+              "baseColumnNames": "CityId",
+              "constraintName": "FK_Persons_Cities",
+              "referencedTableSchemaName": "Location",
+              "referencedTableName": "Cities",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Persons",
+              "tableName": "Persons",
+              "indexName": "IX_Persons_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

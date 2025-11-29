@@ -1,0 +1,163 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00010-business-appointments",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Description",
+                    "type": "NVARCHAR(500)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "RequestDate",
+                    "type": "DATETIME2",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "DateTimeAssigned",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Observation",
+                    "type": "NVARCHAR(500)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PersonId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "EstablishmentId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "Business",
+              "baseTableName": "Appointments",
+              "baseColumnNames": "PersonId",
+              "constraintName": "FK_Appointments_Persons",
+              "referencedTableSchemaName": "Persons",
+              "referencedTableName": "Persons",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "Business",
+              "baseTableName": "Appointments",
+              "baseColumnNames": "EstablishmentId",
+              "constraintName": "FK_Appointments_Establishments",
+              "referencedTableSchemaName": "Business",
+              "referencedTableName": "Establishments",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "indexName": "IX_Appointments_PersonId",
+              "columns": [
+                { "column": { "name": "PersonId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "indexName": "IX_Appointments_EstablishmentId",
+              "columns": [
+                { "column": { "name": "EstablishmentId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "indexName": "IX_Appointments_Person_Establishment_RequestDate",
+              "columns": [
+                { "column": { "name": "PersonId" } },
+                { "column": { "name": "EstablishmentId" } },
+                { "column": { "name": "RequestDate" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "indexName": "IX_Appointments_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00011-insert-plazas",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Plazas",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } },
+                { "column": { "name": "Name", "value": "Plaza Central" } },
+                { "column": { "name": "Description", "value": "Plaza principal ubicada en la zona administrativa" } },
+                { "column": { "name": "Location", "value": "Bogotá" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Plazas",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } },
+                { "column": { "name": "Name", "value": "Plaza Occidente" } },
+                { "column": { "name": "Description", "value": "Plaza de servicios en la zona comercial" } },
+                { "column": { "name": "Location", "value": "Medellín" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

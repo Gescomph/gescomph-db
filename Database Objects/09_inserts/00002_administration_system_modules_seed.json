@@ -1,0 +1,110 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00001-insert-modules",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Panel Principal" } },
+                { "column": { "name": "Description", "value": "Panel de control principal" } },
+                { "column": { "name": "Icon", "value": "home" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Establecimientos" } },
+                { "column": { "name": "Description", "value": "Gestión de establecimientos" } },
+                { "column": { "name": "Icon", "value": "store" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Arrendatarios" } },
+                { "column": { "name": "Description", "value": "Gestión de arrendatarios" } },
+                { "column": { "name": "Icon", "value": "people" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Contratos" } },
+                { "column": { "name": "Description", "value": "Gestión de contratos" } },
+                { "column": { "name": "Icon", "value": "description" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Gestión de Citas" } },
+                { "column": { "name": "Description", "value": "Gestión de citas" } },
+                { "column": { "name": "Icon", "value": "event_note" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Seguridad" } },
+                { "column": { "name": "Description", "value": "Gestión de seguridad y permisos" } },
+                { "column": { "name": "Icon", "value": "security" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Modules",
+              "columns": [
+                { "column": { "name": "Name", "value": "Configuración" } },
+                { "column": { "name": "Description", "value": "Configuración general del sistema" } },
+                { "column": { "name": "Icon", "value": "settings" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00010-insert-persons",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Persons",
+              "tableName": "Persons",
+              "columns": [
+                { "column": { "name": "FirstName", "value": "Administrador" } },
+                { "column": { "name": "LastName", "value": "General" } },
+                { "column": { "name": "Document", "value": "123456789" } },
+                { "column": { "name": "Address", "value": "Calle Principal 123" } },
+                { "column": { "name": "Phone", "value": "3000000000" } },
+                { "column": { "name": "CityId", "valueNumeric": 1 } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Persons",
+              "tableName": "Persons",
+              "columns": [
+                { "column": { "name": "FirstName", "value": "Usuario" } },
+                { "column": { "name": "LastName", "value": "General" } },
+                { "column": { "name": "Document", "value": "1000000000" } },
+                { "column": { "name": "Address", "value": "Calle Principal 123" } },
+                { "column": { "name": "Phone", "value": "3000000000" } },
+                { "column": { "name": "CityId", "valueNumeric": 1 } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

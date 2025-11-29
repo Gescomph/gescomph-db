@@ -1,0 +1,10 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "00001_tr_example_trigger.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

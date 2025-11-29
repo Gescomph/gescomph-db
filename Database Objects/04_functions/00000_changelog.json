@@ -1,0 +1,10 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "00001_f_example_function.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

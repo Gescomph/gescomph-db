@@ -1,0 +1,238 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00017-insert-obligationmonths",
+        "author": "gescomph-team",
+        "changes": [
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 4 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-04-30T00:00:00" } },
+                { "column": { "name": "PaymentDate", "valueDate": "2025-04-28T00:00:00" } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 0.85 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 42329.15 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 8042.54 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 50371.69 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 3 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 5 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-05-31T00:00:00" } },
+                { "column": { "name": "PaymentDate", "valueDate": "2025-05-29T00:00:00" } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 0.85 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 42329.15 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 8042.54 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 50371.69 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 3 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 6 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-06-30T00:00:00" } },
+                { "column": { "name": "PaymentDate", "valueDate": "2025-06-29T00:00:00" } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 0.85 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 42329.15 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 8042.54 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 50371.69 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 3 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 2 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 7 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-07-31T00:00:00" } },
+                { "column": { "name": "PaymentDate", "valueDate": "2025-07-29T00:00:00" } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 1.07 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 53284.93 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 10124.14 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 63409.07 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 3 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 2 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 8 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-08-31T00:00:00" } },
+                { "column": { "name": "PaymentDate", "valueDate": "2025-08-29T00:00:00" } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 1.07 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 53284.93 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 10124.14 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 63409.07 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 3 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 2 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 9 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-09-30T00:00:00" } },
+                { "column": { "name": "PaymentDate", "valueDate": "2025-09-29T00:00:00" } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 1.07 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 53284.93 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 10124.14 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 63409.07 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 3 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 7 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-07-31T00:00:00" } },
+                { "column": { "name": "PaymentDate", "value": null } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 0.85 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 42329.15 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 8042.54 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 50371.69 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 1 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 8 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-08-31T00:00:00" } },
+                { "column": { "name": "PaymentDate", "value": null } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 0.85 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 42329.15 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 8042.54 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 50371.69 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 1 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "Year", "valueNumeric": 2025 } },
+                { "column": { "name": "Month", "valueNumeric": 9 } },
+                { "column": { "name": "DueDate", "valueDate": "2025-09-30T00:00:00" } },
+                { "column": { "name": "PaymentDate", "value": null } },
+                { "column": { "name": "UvtQtyApplied", "valueNumeric": 0.85 } },
+                { "column": { "name": "UvtValueApplied", "valueNumeric": 49799 } },
+                { "column": { "name": "VatRateApplied", "valueNumeric": 0.19 } },
+                { "column": { "name": "BaseAmount", "valueNumeric": 42329.15 } },
+                { "column": { "name": "VatAmount", "valueNumeric": 8042.54 } },
+                { "column": { "name": "TotalAmount", "valueNumeric": 50371.69 } },
+                { "column": { "name": "DaysLate", "valueNumeric": 0 } },
+                { "column": { "name": "LateAmount", "valueNumeric": 0 } },
+                { "column": { "name": "Status", "valueNumeric": 1 } },
+                { "column": { "name": "Locked", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

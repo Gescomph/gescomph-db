@@ -1,0 +1,64 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00018-insert-appointments",
+        "author": "gescomph-team",
+        "changes": [
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "columns": [
+                { "column": { "name": "Description", "value": "Solicitud para conocer el local" } },
+                { "column": { "name": "RequestDate", "valueDate": "2025-01-01T00:00:00" } },
+                { "column": { "name": "DateTimeAssigned", "valueDate": "2025-01-04T10:00:00" } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 1 } },
+                { "column": { "name": "PersonId", "valueNumeric": 1 } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "columns": [
+                { "column": { "name": "Description", "value": "Revisión de contrato anterior" } },
+                { "column": { "name": "RequestDate", "valueDate": "2025-01-02T00:00:00" } },
+                { "column": { "name": "DateTimeAssigned", "valueDate": "2025-01-05T11:00:00" } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 2 } },
+                { "column": { "name": "PersonId", "valueNumeric": 2 } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-02T00:00:00" } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "columns": [
+                { "column": { "name": "Description", "value": "Consulta sobre requisitos para arriendo" } },
+                { "column": { "name": "RequestDate", "valueDate": "2025-01-03T00:00:00" } },
+                { "column": { "name": "DateTimeAssigned", "valueDate": "2025-01-06T09:00:00" } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 3 } },
+                { "column": { "name": "PersonId", "valueNumeric": 2 } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-03T00:00:00" } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } }
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

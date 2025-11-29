@@ -1,0 +1,145 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00022-security_two_factor_codes",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "TwoFactorCodes",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Code",
+                    "type": "NVARCHAR(16)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ExpiresAt",
+                    "type": "DATETIME2",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsUsed",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UsedAt",
+                    "type": "DATETIME2"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "SecurityAuthentication",
+              "baseTableName": "TwoFactorCodes",
+              "baseColumnNames": "UserId",
+              "constraintName": "FK_TwoFactorCodes_Users",
+              "referencedTableSchemaName": "SecurityAuthentication",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "TwoFactorCodes",
+              "indexName": "IX_TwoFactorCodes_UserId",
+              "columns": [
+                { "column": { "name": "UserId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "TwoFactorCodes",
+              "indexName": "IX_TwoFactorCodes_Code",
+              "columns": [
+                { "column": { "name": "Code" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "TwoFactorCodes",
+              "indexName": "IX_TwoFactorCodes_User_Code",
+              "columns": [
+                { "column": { "name": "UserId" } },
+                { "column": { "name": "Code" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "TwoFactorCodes",
+              "indexName": "IX_TwoFactorCodes_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
