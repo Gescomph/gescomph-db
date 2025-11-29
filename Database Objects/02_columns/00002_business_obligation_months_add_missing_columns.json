@@ -1,0 +1,25 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00002-business-obligation_months-add-missing-columns",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "addColumn": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                { "column": { "name": "LateFeeAmount", "type": "DECIMAL(18,2)", "constraints": { "nullable": true } } },
+                { "column": { "name": "NotifiedDueSoonAt", "type": "DATETIME2", "constraints": { "nullable": true } } },
+                { "column": { "name": "NotifiedOverdueAt", "type": "DATETIME2", "constraints": { "nullable": true } } },
+                { "column": { "name": "NotifiedPreJudicialAt", "type": "DATETIME2", "constraints": { "nullable": true } } },
+                { "column": { "name": "NotifiedJudicialAt", "type": "DATETIME2", "constraints": { "nullable": true } } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00001-add-accumulated-first-month-to-contracts",
+        "author": "system",
+        "changes": [
+          {
+            "addColumn": {
+              "schemaName": "Business",
+              "tableName": "Contracts",
+              "columns": [
+                {
+                  "column": {
+                    "name": "AccumulatedFirstMonth",
+                    "type": "decimal(18,2)",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "rollback": [
+          {
+            "dropColumn": {
+              "schemaName": "Business",
+              "tableName": "Contracts",
+              "columnName": "AccumulatedFirstMonth"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00024-administration_system-collectionsettings",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "CollectionSettings",
+              "columns": [
+                { "column": { "name": "Id", "type": "INT IDENTITY(1,1)", "constraints": { "primaryKey": true, "nullable": false } } },
+                { "column": { "name": "Active", "type": "BIT", "defaultValueBoolean": true, "constraints": { "nullable": false } } },
+                { "column": { "name": "IsDeleted", "type": "BIT", "defaultValueBoolean": false, "constraints": { "nullable": false } } },
+                { "column": { "name": "CreatedAt", "type": "DATETIME2", "defaultValueComputed": "SYSUTCDATETIME()", "constraints": { "nullable": false } } },
+                { "column": { "name": "Name", "type": "NVARCHAR(100)", "constraints": { "nullable": false } } },
+                { "column": { "name": "Description", "type": "NVARCHAR(300)" } },
+                { "column": { "name": "Value", "type": "FLOAT", "constraints": { "nullable": false } } },
+                { "column": { "name": "TimeUnit", "type": "INT", "constraints": { "nullable": false } } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "CollectionSettings",
+              "indexName": "IX_CollectionSettings_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

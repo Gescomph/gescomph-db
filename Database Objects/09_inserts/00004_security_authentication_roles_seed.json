@@ -1,0 +1,38 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00004-insert-roles",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "Roles",
+              "columns": [
+                { "column": { "name": "Name", "value": "Administrador" } },
+                { "column": { "name": "Description", "value": "Rol con permisos administrativos" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "Roles",
+              "columns": [
+                { "column": { "name": "Name", "value": "Arrendador" } },
+                { "column": { "name": "Description", "value": "Rol con permisos de arrendador" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

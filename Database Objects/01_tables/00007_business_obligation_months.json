@@ -1,0 +1,190 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00007-business-obligation_months",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ContractId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Year",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Month",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "DueDate",
+                    "type": "DATETIME2",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PaymentDate",
+                    "type": "DATETIME2"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UvtQtyApplied",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UvtValueApplied",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "VatRateApplied",
+                    "type": "DECIMAL(5,4)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "BaseAmount",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "VatAmount",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "TotalAmount",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "DaysLate",
+                    "type": "INT"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "LateAmount",
+                    "type": "DECIMAL(18,2)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Status",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Locked",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "columnNames": "ContractId, Year, Month",
+              "constraintName": "UK_ObligationMonths_Contract_Period"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "Business",
+              "baseTableName": "ObligationMonths",
+              "baseColumnNames": "ContractId",
+              "constraintName": "FK_ObligationMonths_Contracts",
+              "referencedTableSchemaName": "Business",
+              "referencedTableName": "Contracts",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "ObligationMonths",
+              "indexName": "IX_ObligationMonths_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

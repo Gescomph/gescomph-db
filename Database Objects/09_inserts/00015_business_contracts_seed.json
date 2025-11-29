@@ -1,0 +1,60 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00016-insert-contracts",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Contracts",
+              "columns": [
+                { "column": { "name": "PersonId", "valueNumeric": 2 } },
+                { "column": { "name": "StartDate", "valueDate": "2025-01-01T00:00:00" } },
+                { "column": { "name": "EndDate", "valueDate": "2025-12-31T23:59:59" } },
+                { "column": { "name": "TotalUvtQtyAgreed", "valueNumeric": 0.85 } },
+                { "column": { "name": "TotalBaseRentAgreed", "valueNumeric": 42329.15 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Contracts",
+              "columns": [
+                { "column": { "name": "PersonId", "valueNumeric": 2 } },
+                { "column": { "name": "StartDate", "valueDate": "2025-07-01T00:00:00" } },
+                { "column": { "name": "EndDate", "valueDate": "2026-06-30T23:59:59" } },
+                { "column": { "name": "TotalUvtQtyAgreed", "valueNumeric": 1.07 } },
+                { "column": { "name": "TotalBaseRentAgreed", "valueNumeric": 53284.93 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "Contracts",
+              "columns": [
+                { "column": { "name": "PersonId", "valueNumeric": 2 } },
+                { "column": { "name": "StartDate", "valueDate": "2023-01-01T00:00:00" } },
+                { "column": { "name": "EndDate", "valueDate": "2024-06-30T23:59:59" } },
+                { "column": { "name": "TotalUvtQtyAgreed", "valueNumeric": 1.00 } },
+                { "column": { "name": "TotalBaseRentAgreed", "valueNumeric": 49799 } },
+                { "column": { "name": "Active", "valueBoolean": false } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

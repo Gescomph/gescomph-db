@@ -1,0 +1,19 @@
+stages:
+  - validate
+  - deploy
+
+liquibase-validate:
+  stage: validate
+  image: liquibase/liquibase
+  script:
+    - liquibase validate
+  only:
+    - develop
+
+liquibase-update:
+  stage: deploy
+  image: liquibase/liquibase
+  script:
+    - liquibase update
+  only:
+    - develop

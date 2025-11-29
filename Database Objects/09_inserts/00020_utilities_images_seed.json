@@ -1,0 +1,590 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00020-insert-images",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "primavera_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "primavera_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "primavera_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "primavera_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "torre_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "torre_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "torre_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "torre_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "bodega_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "bodega_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 3 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "bodega_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "bodega_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 3 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "local_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "local_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 4 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "local_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "local_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 4 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "isla_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "isla_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 5 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "isla_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "isla_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 5 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "oficina12_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "oficina12_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 6 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "oficina12_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "oficina12_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 6 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "tallerAuto_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "tallerAuto_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 7 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "tallerAuto_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "tallerAuto_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 7 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "localModa_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "localModa_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 8 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "localModa_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "localModa_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 8 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "foodCourt_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "foodCourt_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 9 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "foodCourt_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "foodCourt_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 9 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "oficina15_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "oficina15_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 10 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "oficina15_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "oficina15_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 10 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "consultorio_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "consultorio_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 11 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "consultorio_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "consultorio_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 11 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "miniBodega_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "miniBodega_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 12 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "miniBodega_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "miniBodega_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 12 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "serviciosRapidos_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "serviciosRapidos_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 13 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "serviciosRapidos_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "serviciosRapidos_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 13 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "cowork_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "cowork_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 14 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "cowork_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "cowork_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 14 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "bodegaLogistica_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "bodegaLogistica_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 15 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "bodegaLogistica_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "bodegaLogistica_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 15 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "aulaCapacitacion_1.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "aulaCapacitacion_1" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 16 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "aulaCapacitacion_2.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1755031443/defaul_cj5nqv.png" } },
+                { "column": { "name": "PublicId", "value": "aulaCapacitacion_2" } },
+                { "column": { "name": "EntityType", "valueNumeric": 1 } },
+                { "column": { "name": "EntityId", "valueNumeric": 16 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "plaza2_generated.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1762900841/establishments/2/Generated_Image_October_22%2C_2025_-_8_48AM_%282%29_c323d3d25ae84ec48f712f154902321e.jpg" } },
+                { "column": { "name": "PublicId", "value": "plaza2_generated" } },
+                { "column": { "name": "EntityType", "valueNumeric": 3 } },
+                { "column": { "name": "EntityId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Utilities",
+              "tableName": "Images",
+              "columns": [
+                { "column": { "name": "FileName", "value": "plaza1_generated.jpg" } },
+                { "column": { "name": "FilePath", "value": "https://res.cloudinary.com/dmbndpjlh/image/upload/v1762900841/establishments/2/Generated_Image_October_22%2C_2025_-_8_48AM_%282%29_c323d3d25ae84ec48f712f154902321e.jpg" } },
+                { "column": { "name": "PublicId", "value": "plaza1_generated" } },
+                { "column": { "name": "EntityType", "valueNumeric": 3 } },
+                { "column": { "name": "EntityId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

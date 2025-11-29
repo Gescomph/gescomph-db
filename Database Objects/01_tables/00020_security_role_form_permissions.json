@@ -1,0 +1,132 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00020-security_role_form_permissions",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolFormPermissions",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "RolId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "FormId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PermissionId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "SecurityAuthentication",
+              "baseTableName": "RolFormPermissions",
+              "baseColumnNames": "RolId",
+              "constraintName": "FK_RolFormPermissions_Roles",
+              "referencedTableSchemaName": "SecurityAuthentication",
+              "referencedTableName": "Roles",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "SecurityAuthentication",
+              "baseTableName": "RolFormPermissions",
+              "baseColumnNames": "FormId",
+              "constraintName": "FK_RolFormPermissions_Forms",
+              "referencedTableSchemaName": "AdministrationSystem",
+              "referencedTableName": "Forms",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "SecurityAuthentication",
+              "baseTableName": "RolFormPermissions",
+              "baseColumnNames": "PermissionId",
+              "constraintName": "FK_RolFormPermissions_Permissions",
+              "referencedTableSchemaName": "SecurityAuthentication",
+              "referencedTableName": "Permissions",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolFormPermissions",
+              "columnNames": "RolId, FormId, PermissionId",
+              "constraintName": "UK_RolFormPermissions_Rol_Form_Permission"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolFormPermissions",
+              "indexName": "IX_RolFormPermissions_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

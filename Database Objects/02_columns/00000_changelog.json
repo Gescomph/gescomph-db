@@ -1,0 +1,16 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "00001_business_contracts_add_accumulated_first_month.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "00002_business_obligation_months_add_missing_columns.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

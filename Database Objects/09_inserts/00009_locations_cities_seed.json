@@ -1,0 +1,705 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00009-insert-cities",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Acevedo" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Agrado" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Aipe" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Algeciras" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Altamira" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Baraya" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Campoalegre" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Colombia" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Elías" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Garzón" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Gigante" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Guadalupe" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Hobo" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Iquira" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Isnos" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "La Argentina" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "La Plata" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Nátaga" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Neiva" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Oporapa" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Paicol" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Palermo" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Palestina" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Pital" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Pitalito" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Rivera" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Saladoblanco" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "San Agustín" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Santa María" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Suaza" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Tarqui" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Tello" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Teruel" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Tesalia" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Timaná" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Villavieja" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Location",
+              "tableName": "Cities",
+              "columns": [
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "valueDate": "2025-01-01T00:00:00"
+                  }
+                },
+                { "column": { "name": "Name", "value": "Yaguará" } },
+                { "column": { "name": "DepartmentId", "valueNumeric": 1 } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

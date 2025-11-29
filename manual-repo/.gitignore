@@ -1,0 +1,8 @@
+# Liquibase manual repo ignores
+.env
+.env.local
+*.log
+tmp/
+liquibase.log
+*.cache
+.DS_Store

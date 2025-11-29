@@ -1,0 +1,10 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "00001_mv_example_summary.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

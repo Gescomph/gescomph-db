@@ -1,0 +1,155 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00021-security_refresh_tokens",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RefreshToken",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "TokenHash",
+                    "type": "VARCHAR(128)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ExpiresAt",
+                    "type": "DATETIME2",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsRevoked",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ReplacedByTokenHash",
+                    "type": "VARCHAR(128)"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "SecurityAuthentication",
+              "baseTableName": "RefreshToken",
+              "baseColumnNames": "UserId",
+              "constraintName": "FK_RefreshToken_Users",
+              "referencedTableSchemaName": "SecurityAuthentication",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_TokenHash",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "TokenHash" } }
+              ]
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_UserId",
+              "columns": [
+                { "column": { "name": "UserId" } }
+              ]
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_ReplacedByTokenHash",
+              "columns": [
+                { "column": { "name": "ReplacedByTokenHash" } }
+              ]
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_UserId_ExpiresAt",
+              "columns": [
+                { "column": { "name": "UserId" } },
+                { "column": { "name": "ExpiresAt" } }
+              ]
+            }
+          },
+
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RefreshToken",
+              "indexName": "IX_RefreshToken_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
