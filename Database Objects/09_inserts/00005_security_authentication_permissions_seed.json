@@ -1,0 +1,64 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00005-insert-permissions",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "Ver" } },
+                { "column": { "name": "Description", "value": "Permite ver registros" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "Crear" } },
+                { "column": { "name": "Description", "value": "Permite crear registros" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "Editar" } },
+                { "column": { "name": "Description", "value": "Permite editar registros" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "Permissions",
+              "columns": [
+                { "column": { "name": "Name", "value": "Eliminar" } },
+                { "column": { "name": "Description", "value": "Permite eliminar registros" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

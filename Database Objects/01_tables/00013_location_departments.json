@@ -1,0 +1,82 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00013-location-departments",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Location",
+              "tableName": "Departments",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Name",
+                    "type": "NVARCHAR(100)",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Location",
+              "tableName": "Departments",
+              "columnNames": "Name",
+              "constraintName": "UK_Departments_Name"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Location",
+              "tableName": "Departments",
+              "indexName": "IX_Departments_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

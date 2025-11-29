@@ -1,0 +1,113 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00019-security_role_users",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolUsers",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "UserId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "RolId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "SecurityAuthentication",
+              "baseTableName": "RolUsers",
+              "baseColumnNames": "UserId",
+              "constraintName": "FK_RolUsers_Users",
+              "referencedTableSchemaName": "SecurityAuthentication",
+              "referencedTableName": "Users",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "SecurityAuthentication",
+              "baseTableName": "RolUsers",
+              "baseColumnNames": "RolId",
+              "constraintName": "FK_RolUsers_Roles",
+              "referencedTableSchemaName": "SecurityAuthentication",
+              "referencedTableName": "Roles",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolUsers",
+              "columnNames": "UserId, RolId",
+              "constraintName": "UK_RolUsers_User_Rol"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "SecurityAuthentication",
+              "tableName": "RolUsers",
+              "indexName": "IX_RolUsers_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

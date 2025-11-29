@@ -1,0 +1,112 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00004-administration_system-systemparameters",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "SystemParameters",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Key",
+                    "type": "NVARCHAR(100)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Value",
+                    "type": "NVARCHAR(500)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "EffectiveFrom",
+                    "type": "DATETIME2",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "EffectiveTo",
+                    "type": "DATETIME2"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "SystemParameters",
+              "columnNames": "Key",
+              "constraintName": "UK_SystemParameters_Key"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "SystemParameters",
+              "indexName": "IX_SystemParameters_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "descending": true
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Id",
+                    "descending": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

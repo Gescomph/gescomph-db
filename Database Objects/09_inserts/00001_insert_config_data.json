@@ -1,0 +1,42 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00001-insert-system-params",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "SystemParameters",
+              "columns": [
+                { "column": { "name": "Key", "value": "UVT" } },
+                { "column": { "name": "Value", "value": "49799" } },
+                { "column": { "name": "EffectiveFrom", "valueDate": "2025-01-01T00:00:00" } },
+                { "column": { "name": "EffectiveTo", "value": null } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "SystemParameters",
+              "columns": [
+                { "column": { "name": "Key", "value": "IVA" } },
+                { "column": { "name": "Value", "value": "0.19" } },
+                { "column": { "name": "EffectiveFrom", "valueDate": "2020-01-01T00:00:00" } },
+                { "column": { "name": "EffectiveTo", "value": null } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

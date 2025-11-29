@@ -1,0 +1,83 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00015-insert-premisesleased",
+        "author": "gescomph-team",
+        "changes": [
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 1 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 2 } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 2 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 3 } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 3 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 1 } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 5 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+
+          {
+            "insert": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "columns": [
+                { "column": { "name": "ContractId", "valueNumeric": 2 } },
+                { "column": { "name": "EstablishmentId", "valueNumeric": 6 } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00002-insert-forms",
+        "author": "gescomph-team",
+        "changes": [
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Inicio" } },
+                { "column": { "name": "Description", "value": "Vista general de la pagina principal" } },
+                { "column": { "name": "Route", "value": "dashboard" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Establecimientos" } },
+                { "column": { "name": "Description", "value": "Ver y gestionar establecimientos" } },
+                { "column": { "name": "Route", "value": "establishments/main" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Contratos" } },
+                { "column": { "name": "Description", "value": "Gestión de contratos" } },
+                { "column": { "name": "Route", "value": "contracts" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Citas" } },
+                { "column": { "name": "Description", "value": "Gestión de Citas" } },
+                { "column": { "name": "Route", "value": "appointment" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Modelos de Seguridad" } },
+                { "column": { "name": "Description", "value": "Configuración de modelos de seguridad" } },
+                { "column": { "name": "Route", "value": "security/main" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Usuarios" } },
+                { "column": { "name": "Description", "value": "Gestión de Usuarios" } },
+                { "column": { "name": "Route", "value": "security/users" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Roles" } },
+                { "column": { "name": "Description", "value": "Gestión de roles" } },
+                { "column": { "name": "Route", "value": "security/roles" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Formularios" } },
+                { "column": { "name": "Description", "value": "Gestión de Formularios" } },
+                { "column": { "name": "Route", "value": "security/forms" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Modulos" } },
+                { "column": { "name": "Description", "value": "Gestión de módulos" } },
+                { "column": { "name": "Route", "value": "security/modules" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Permisos" } },
+                { "column": { "name": "Description", "value": "Gestión de Permisos" } },
+                { "column": { "name": "Route", "value": "security/permissions" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          },
+          {
+            "insert": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                { "column": { "name": "Name", "value": "Configuración Principal" } },
+                { "column": { "name": "Description", "value": "Ajustes principales del sistema" } },
+                { "column": { "name": "Route", "value": "settings/main" } },
+                { "column": { "name": "IsDeleted", "valueBoolean": false } },
+                { "column": { "name": "Active", "valueBoolean": true } },
+                { "column": { "name": "CreatedAt", "valueDate": "2025-01-01T00:00:00" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

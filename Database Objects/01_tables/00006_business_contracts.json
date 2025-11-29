@@ -1,0 +1,114 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00006-business-contracts",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Business",
+              "tableName": "Contracts",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "StartDate",
+                    "type": "DATETIME2",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "EndDate",
+                    "type": "DATETIME2",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "PersonId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "TotalBaseRentAgreed",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "TotalUvtQtyAgreed",
+                    "type": "DECIMAL(18,2)",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "Business",
+              "baseTableName": "Contracts",
+              "baseColumnNames": "PersonId",
+              "constraintName": "FK_Contracts_Persons",
+              "referencedTableSchemaName": "Persons",
+              "referencedTableName": "Persons",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "Contracts",
+              "indexName": "IX_Contracts_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

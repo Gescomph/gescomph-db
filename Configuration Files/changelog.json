@@ -1,0 +1,76 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "../Database Objects/00_schemas/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/01_tables/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/02_columns/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/02_procedures/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/03_materialized_views/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/04_functions/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/05_views/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/06_triggers/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/07_indexes/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/08_types/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/09_inserts/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "../Database Objects/10_updates/00000_changelog.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "00001_update_config_values.json",
+        "relativeToChangelogFile": true
+      }
+    }
+    ,
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00011-business-premises_leased",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "ContractId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "EstablishmentId",
+                    "type": "INT",
+                    "constraints": { "nullable": false }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "Business",
+              "baseTableName": "PremisesLeaseds",
+              "baseColumnNames": "ContractId",
+              "constraintName": "FK_PremisesLeaseds_Contracts",
+              "referencedTableSchemaName": "Business",
+              "referencedTableName": "Contracts",
+              "referencedColumnNames": "Id",
+              "onDelete": "CASCADE"
+            }
+          },
+          {
+            "addForeignKeyConstraint": {
+              "baseTableSchemaName": "Business",
+              "baseTableName": "PremisesLeaseds",
+              "baseColumnNames": "EstablishmentId",
+              "constraintName": "FK_PremisesLeaseds_Establishments",
+              "referencedTableSchemaName": "Business",
+              "referencedTableName": "Establishments",
+              "referencedColumnNames": "Id",
+              "onDelete": "RESTRICT"
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "columnNames": "ContractId, EstablishmentId",
+              "constraintName": "UK_PremisesLeaseds_Contract_Establishment"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "indexName": "IX_PremisesLeaseds_EstablishmentId",
+              "columns": [
+                { "column": { "name": "EstablishmentId" } }
+              ]
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "Business",
+              "tableName": "PremisesLeaseds",
+              "indexName": "IX_PremisesLeaseds_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                { "column": { "name": "CreatedAt", "descending": true } },
+                { "column": { "name": "Id", "descending": true } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "00001_idx_example_index.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

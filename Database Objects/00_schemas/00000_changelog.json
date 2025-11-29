@@ -1,0 +1,88 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00000-create-administration-schema",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'AdministrationSystem') EXEC('CREATE SCHEMA AdministrationSystem AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00001-create-business-schema",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Business') EXEC('CREATE SCHEMA Business AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00003-create-location-schema",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Location') EXEC('CREATE SCHEMA Location AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00004-create-persons-schema",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Persons') EXEC('CREATE SCHEMA Persons AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00005-create-security-auth-schema",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'SecurityAuthentication') EXEC('CREATE SCHEMA SecurityAuthentication AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "00006-create-utilities-schema",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "sql": {
+              "sql": "IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Utilities') EXEC('CREATE SCHEMA Utilities AUTHORIZATION dbo');"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

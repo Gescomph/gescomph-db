@@ -1,0 +1,10 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "00001_type_example_custom_type.json",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

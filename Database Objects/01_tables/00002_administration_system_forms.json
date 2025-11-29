@@ -1,0 +1,115 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00002-administration_system-forms",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "createTable": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Id",
+                    "type": "INT IDENTITY(1,1)",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Active",
+                    "type": "BIT",
+                    "defaultValueBoolean": true,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "IsDeleted",
+                    "type": "BIT",
+                    "defaultValueBoolean": false,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "type": "DATETIME2",
+                    "defaultValueComputed": "SYSUTCDATETIME()",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Name",
+                    "type": "NVARCHAR(100)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Description",
+                    "type": "NVARCHAR(300)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Route",
+                    "type": "NVARCHAR(200)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "addUniqueConstraint": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "columnNames": "Name",
+              "constraintName": "UK_Forms_Name"
+            }
+          },
+          {
+            "createIndex": {
+              "schemaName": "AdministrationSystem",
+              "tableName": "Forms",
+              "indexName": "IX_Forms_CreatedAt_Id",
+              "unique": false,
+              "columns": [
+                {
+                  "column": {
+                    "name": "CreatedAt",
+                    "descending": true
+                  }
+                },
+                {
+                  "column": {
+                    "name": "Id",
+                    "descending": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
