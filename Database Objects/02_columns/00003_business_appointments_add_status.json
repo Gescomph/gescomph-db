@@ -1,0 +1,31 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "00003-business-appointments-add-status",
+        "author": "gescomph-team",
+        "context": "develop,qa,staging,main",
+        "changes": [
+          {
+            "addColumn": {
+              "schemaName": "Business",
+              "tableName": "Appointments",
+              "columns": [
+                {
+                  "column": {
+                    "name": "Status",
+                    "type": "INT",
+                    "defaultValueNumeric": 1,
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
